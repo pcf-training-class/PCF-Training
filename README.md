@@ -27,7 +27,7 @@
 
 - Download lab files
 
-  Lab files for all modules maybe downloaded from [here](https://www.dropbox.com/s/sr8anzpmuhap8tl/pcf-lab.zip?dl=1). Please unzip the downloaded zip file to a location where it can accessed easily. Please follow the Lab instructions in each folder associated with the module.
+  Lab files for all modules maybe downloaded from [here](https://www.dropbox.com/s/sr8anzpmuhap8tl/pcf-lab.zip?dl=1). Please unzip the downloaded zip file to a location where it can be accessed easily. Please follow the Lab instructions in each folder associated with the module.
 
 ## Course Modules
 1. Introduction to Pivotal Cloud Foundry
