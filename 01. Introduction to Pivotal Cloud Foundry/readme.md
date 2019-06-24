@@ -66,5 +66,5 @@ By now, you should have logged in to PWS, downloaded and configured CF CLI. If n
 
      ```cf delete node```
 
-15. Repeat the delete command for other applcations (python, php, ruby) if they were deployed. You may delete teh apps from PCF Apps Manager also.
+15. Repeat the delete command for other applcations (python, php, ruby) if they were deployed. You may delete the apps from PCF Apps Manager also.
 
