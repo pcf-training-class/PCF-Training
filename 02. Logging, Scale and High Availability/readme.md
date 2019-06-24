@@ -35,13 +35,9 @@ Now that we pushed some simple apps, let's go one step further. Let's push a big
 10. Now let's scale the application both vertically (scale up) and horizontally (scale out).
 11. Start tailing the logs again with additional parameters
 
-    #### Mac, Linux, Powershell
-
-   ```cf logs articulate | grep "API\|CELL"```
+    #### Mac, Linux, Powershell: ```cf logs articulate | grep "API\|CELL"```
   
-   #### Windows
-
-   ```cf logs articulate | findstr "API CELL"```
+    #### Windows: ```cf logs articulate | findstr "API CELL"```
 
 12. In the other terminal window, scale up ```articulate```
 
@@ -55,7 +51,7 @@ Now that we pushed some simple apps, let's go one step further. Let's push a big
     
 16. Now let's scale out the ```articulate``` application
 17. Use the browser to view the ```articulate``` application. Go to the **Scale & HA** tab.
-18. Refresh the page a few times while watching the values for ```instance Index```, ```Container Address``` and ```Cell Adress``` fields  under the ```Application Environment Information``` section.
+18. Click the **Refresh*** button a few times while watching the values for ```instance Index```, ```Container Address``` and ```Cell Adress``` fields  under the ```Application Environment Information``` section.
 19. Return to the terminal window and **scale out** the ```articulate``` application
 
     ```cf scale articulate -i 3```
@@ -67,3 +63,22 @@ Now that we pushed some simple apps, let's go one step further. Let's push a big
 21. Go back to the browser window where ```articulate``` is running. Press the **Refresh** button several times. Observe the Addresses
 and Instance Index changing. Notice how quickly the new application instances are provisioned and immediately load balanced.
 
+### High Availability
+
+22. Have the terminal window beside the browser. In the browser, press the **Kill** button.
+23. Check the state of the app in the terminal window.
+
+    ```cf app articulate```
+    
+24. You can see that PCF already detected the failed instance and is recreating a new instance.
+25. Repeat the above command a few times and see that all three instances are in running state.
+26. Click the **Refresh** button a few times and see that the application is back to 3 instances.
+27. Find out which app instance was killed.
+
+    ```cf events articulate```
+    
+28. Scale the app back to one instance
+
+    ```cf scale articulate -i 1```
+ 
+ 
