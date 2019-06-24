@@ -13,7 +13,7 @@ By now, you should have logged in to PWS, downloaded and configured CF CLI. If n
 4. In the command window cd into the appropriate directory
 
     ```cd <parent directory>/pcf-lab/demo-apps/node```
-5. Push the node app using teh command below:
+5. Push the node app using the command below:
 
     ```cf push node --random-route -m 128M```
     
