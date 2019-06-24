@@ -6,7 +6,7 @@ Now that we pushed some simple apps, let's go one step further. Let's push a big
 ### Tail Logs
 1. Open a command window and cd into the ```articulate``` directory
 
-    ```cd <parent directory>/pcf-developer-training/articulate```
+    ```cd <parent directory>/pcf-lab/articulate```
 
 2. Push the ```articulate``` application
 
