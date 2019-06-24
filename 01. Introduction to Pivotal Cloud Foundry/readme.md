@@ -49,9 +49,9 @@ By now, you should have logged in to PWS, downloaded and configured CF CLI. If n
 
 11. View the application details.
 
-   ``cf app node``
+      ``cf app node``
 
-12. You may repeat the steps for the other applications by cd into the appropriate directory and push the app. For example:
+12. You may repeat the steps for other applications by cd into the appropriate directory and push the app. For example:
 
     ```cd ../python```
     
