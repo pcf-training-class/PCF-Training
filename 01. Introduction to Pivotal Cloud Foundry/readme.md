@@ -62,9 +62,12 @@ By now, you should have logged in to PWS, downloaded and configured CF CLI. If n
     ```curl <app_url>```
     
 13. Go to [PCF Apps Manager](https://console.run.pivotal.io) and review the contents under Org, Space and App
-14. Delete the applications
+
+14. Review and Bookmark the [CF CLI Reference Guide](http://cli.cloudfoundry.org/en-US/cf/)
+
+15. Delete the applications
 
      ```cf delete node```
 
-15. Repeat the delete command for other applcations (python, php, ruby) if they were deployed. You may delete the apps from PCF Apps Manager also.
+16. Repeat the delete command for other applcations (python, php, ruby) if they were deployed. You may delete the apps from PCF Apps Manager also.
 
