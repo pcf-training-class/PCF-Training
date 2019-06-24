@@ -16,9 +16,10 @@
 
 - The following should be installed prior to the course:
   
+  - CF CLI - Please refer to the "Download CF CLI" section below.
   - [Java JDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
   - A programmer-friendly text editor. [Atom](https://atom.io/), [Visual Studio Code](https://code.visualstudio.com/download) or  [Notepad++](https://notepad-plus-plus.org/)
-  - Command Line HTTP client - Mac and Linux users already have curl. Windows Users can download the latest version [here](https://curl.haxx.se/)
+  - Command Line HTTP client - Mac and Linux users already have curl. Windows users can download the latest version [here](https://curl.haxx.se/)
 
 - Download CF CLI
 
