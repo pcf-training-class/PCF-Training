@@ -11,11 +11,11 @@ In this lab, we will create and use both managed services and user-provided serv
 
     ```cf push attendee-service -p ./attendee-service-0.1.jar -m 768M --random-route```
 
-You will notice that the ```cf push``` produced some errors and ```attendee-service``` app did not start correctly. 
+    You will notice that the ```cf push``` produced some errors and ```attendee-service``` app did not start correctly. 
 
-It is because the app depends on a database which is not provisioned or linked. 
+    It is because the app depends on a database which is not provisioned or linked. 
 
-Let's go ahead and provision a MySQL instance from PWS Marketplace and bind ```attendee-service``` to it.
+    Let's go ahead and provision a MySQL instance from PWS Marketplace and bind ```attendee-service``` to it.
 
 ### Provision and bind MySQL service
 
@@ -23,7 +23,7 @@ Let's go ahead and provision a MySQL instance from PWS Marketplace and bind ```a
 
     ```cf marketplace```
 
-You can see that PWS offers ```cleardb``` MySQL as a managed service and ```spark``` is a plan in the free-tier
+    You can see that PWS offers ```cleardb``` MySQL as a managed service and ```spark``` is a plan in the free-tier
 
 4. Create the MySQL service instance
 
@@ -50,7 +50,7 @@ You can see that PWS offers ```cleardb``` MySQL as a managed service and ```spar
 
     ```cf create-user-provided-service attendee-service -p uri```
     
-  You will be presented with an interactive prompt to enter the ```uri```. 
+    You will be presented with an interactive prompt to enter the ```uri```. 
 10. Find the URL for the ```attendee-service``` application from the and enter that value with a ```https://``` prefix. 
 
     ```uri> https://{{attendees_app_uri}}/```
