@@ -12,7 +12,7 @@ By now, you should have logged in to PWS, downloaded and configured CF CLI. If n
 3. Once logged in, we will push some simple applications as below:
 4. In the command window cd into the appropriate directory
 
-    ```cd <parent directory>/pcf-developer-training/node```
+    ```cd <parent directory>/pcf-lab/demo-apps/node```
 5. Push the node app using teh command below:
 
     ```cf push node --random-route -m 128M```
@@ -41,5 +41,5 @@ By now, you should have logged in to PWS, downloaded and configured CF CLI. If n
 
      ```cf delete node```
 
-12. Repeat for other applcations (python, php, ruby) if they were deployed.
+12. Repeat the delete command for other applcations (python, php, ruby) if they were deployed.
 
