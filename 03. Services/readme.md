@@ -2,15 +2,19 @@
 
 In this lab, we will create and use both managed services and user-provided services. To facilitate this, we will deploy the ```attendee-service``` application.
 
-### Push the ```attendee-service``` app
+**Push the** ```attendee-service``` **app**
 1. Open a command window and cd into the ```attendee-service``` dorectory
 
-    ```cd <parent directory>/pcf-developer-training/attendee-service```
+    ```cd <parent directory>/pcf-lab/attendee-service```
 2. Push the ```attendee-service``` application
 
     ```cf push attendee-service -p ./attendee-service-0.1.jar -m 768M --random-route```
 
-You will notice that the ```cf push``` produced some errors and ```attendee-service``` app did not start correctly. It is because the app depends on a database which is not provisioned or linked. Let's go ahead and provision a MySQL instance from PWS Marketplace and bind ```attendee-service``` to it.
+You will notice that the ```cf push``` produced some errors and ```attendee-service``` app did not start correctly. 
+
+It is because the app depends on a database which is not provisioned or linked. 
+
+Let's go ahead and provision a MySQL instance from PWS Marketplace and bind ```attendee-service``` to it.
 
 ### Provision and bind MySQL service
 
@@ -33,3 +37,12 @@ You can see that PWS offers ```cleardb``` MySQL as a managed service and ```spar
     ```cf restart attendee-service```
     
 7. Run the ```attendee-service``` application in browser. You should see a JSON response.
+8. In the command window, view the environment for ```attendee-service```
+
+    ```cf env attendee-service```
+    
+    Different languages/frameworks will have various ways to read environment variables.
+attendee-service takes advantage of a Java Buildpack feature called Auto-Reconfiguration that
+will automatically re-write bean definitions to connect with services bound to an application.
+
+
