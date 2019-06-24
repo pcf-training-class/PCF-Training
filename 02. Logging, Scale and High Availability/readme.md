@@ -35,12 +35,9 @@ Now that we pushed some simple apps, let's go one step further. Let's push a big
 10. Now let's scale the application both vertically (scale up) and horizontally (scale out).
 11. Start tailing the logs again with additional parameters
 
-####    Mac, Linux, Powershell
+#### Mac, Linux, Powershell
 
    ```cf logs articulate | grep "API\|CELL"```
     
-####    Windows
+#### Windows
 
-    ```cf logs articulate | findstr API CELL```
-
- 
