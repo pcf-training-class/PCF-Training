@@ -6,6 +6,20 @@
   
   PCF environment for the training has been provisioned on Pivotal Web Services. All students will get credentials to login to PCF. You can login to Pivotal Web Services (PWS) by clicking [here](https://login.run.pivotal.io/login) and then clicking on the login button. Use the credentials provided to you by your instructor.
   
+- Local Machine
+
+  Minimum Specs:
+  - 4GB Memory
+  - 1GB free disk space
+  - Network access to the Pivotal Cloud Foundry environment and internet
+  - Ability to install software on your local machine
+
+- The following should be installed prior to the course:
+  
+  - [Java JDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
+  - A programmer-friendly text editor. [Atom](https://atom.io/), [Visual Studio Code](https://code.visualstudio.com/download) or  [Notepad++](https://notepad-plus-plus.org/)
+  - Command Line HTTP client - Mac and Linux users already have curl. Windows Users can download the latest version [here](https://curl.haxx.se/)
+
 - Download CF CLI
 
   CF CLI is the utility that provides command line access to Cloud Foundry. Please download the appropriate file for your Operating System from PWS by clicking on the Tools menu.
