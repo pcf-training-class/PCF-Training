@@ -28,6 +28,7 @@ Now that we pushed some simple apps, let's go one step further. Let's push a big
 9. View the events assocated with ```articulate``` application
 
     ```cf events articulate```
+    
     You can view the events in Overview tab of the Apps Manager as well.
 
 ### Scale the app
@@ -35,9 +36,5 @@ Now that we pushed some simple apps, let's go one step further. Let's push a big
 11. Start tailing the logs again with additional parameters
 
 ####    Mac, Linux, Powershell
-    
-        ```cf logs articulate | grep "API\|CELL"```
-    
-####    Windows
 
-    ```cf logs articulate | findstr "API CELL"```
+ 
