@@ -37,4 +37,10 @@ Now that we pushed some simple apps, let's go one step further. Let's push a big
 
 ####    Mac, Linux, Powershell
 
+   ```cf logs articulate | grep "API\|CELL"```
+    
+####    Windows
+
+    ```cf logs articulate | findstr API CELL```
+
  
