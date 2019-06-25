@@ -4,7 +4,7 @@
 
 1. Change directory to the attendee-service application
 
-  ```cd pcf-lab/articulate/```
+  ```cd <parent directory>/pcf-lab/attendee-service/```
   
 2. Generate the manifest file
 
@@ -13,6 +13,6 @@
 3. Make modifications to the manifest file
 
   - Increase the instances to 2
-  - Setthe path to the application binary
+  - Set the path to the application binary
 
 4. Push ```attendee-service```
