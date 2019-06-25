@@ -1,6 +1,6 @@
 # Manifests
 
-## How to reverse-Engineer a manifest from an already running application
+## How to reverse-Engineer a manifest file from an already running application
 
 1. Change directory to the ```attendee-service``` application
 
