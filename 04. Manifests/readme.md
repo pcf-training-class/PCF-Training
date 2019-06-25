@@ -12,8 +12,8 @@
   
 3. Make modifications to the manifest file
 
-  - Increase the instances to 2
-  - Set the path to the application binary:  ```path: ./attendee-service-0.1.jar```
+     - Increase the instances to 2
+    - Set the path to the application binary:  ```path: ./attendee-service-0.1.jar```
 
 4. Push ```attendee-service```
 
