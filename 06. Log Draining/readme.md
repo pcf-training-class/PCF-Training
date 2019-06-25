@@ -5,7 +5,7 @@
 3. Select "I use Cloud Foundry"
 4. "What should we call it?" give it a name: **log-drain**
 5. Click "Save"
-6. Take note of the url (logsN.papertrail.com:<port-number>) and use it in the next step in place of '''{{syslog_drain_url}}```
+6. Make a note of the URL (logsN.papertrail.com:port-number) and use it in the next step in place of '''{{syslog_drain_url}}```
 7. Create a User Provided Service Instance that streams logs to Papertrail.
 
     ```cf create-user-provided-service articulate-log-drain -l syslog://{{syslog_drain_url}}```
