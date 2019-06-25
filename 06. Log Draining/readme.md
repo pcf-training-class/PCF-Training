@@ -18,4 +18,4 @@
 10. To view the logs in Papertrail do the following:
     - Click on "Dashboard"
     - Click on "log-drain"
-    
+11. Restart the ``articulate``` application and watch all the logs including the **Spring** logo.    
