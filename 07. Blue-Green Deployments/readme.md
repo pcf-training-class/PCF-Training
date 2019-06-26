@@ -32,7 +32,7 @@
     
     for example, ```cf map-route articulate-v2 cfapps.io --hostname articulate-acotyledonous-hornlessnes```
  
-11. In the browser, go to the tab where the requests are being sent to the app. You should see that it is starting to send requests to version 2 of teh app.
+11. In the browser, go to the tab where the requests are being sent to the app. You should see that it is starting to send requests to version 2 of the app.
 12. Press the **Reset** button so that the load distribution starts new and we can observe the pattern. About one third of the traffic should now be going to version 2 and two thirds going to version 1. (this depends on the number of instances running for each version) 
 13. We can now move more traffic to version 2 by adjusting the number of instances for both versions.
 
