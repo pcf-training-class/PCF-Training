@@ -21,7 +21,7 @@ By now, you should have logged in to PWS, downloaded and configured CF CLI. If n
    
 5. Understand Org and Space details.
 
-   ``cf org``
+   ``cf orgs``
    
    ``cf org <org-name>``
    
