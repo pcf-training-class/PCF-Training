@@ -1,6 +1,6 @@
 # Blue-Green Deployments
 
-1. Befor deploying the new version of the app, let's scale the current version of ```articulate``` app to 2 instances
+1. Before deploying the new version of the app, let's scale the current version of ```articulate``` app to 2 instances
 
     ```cf scale articulate -i 2```
     
