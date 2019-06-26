@@ -6,7 +6,7 @@
     
 2. Browse the ```articulate Blue-Green``` page
 3. Press the **Start** button to generate traffic to the app
-4. Leave the traffic generation running and observe the app handling all the web requests.
+4. Leave the traffic generation running and observe the articulate app handling all the web requests.
 5. Make a note of the ```host``` for the ```articulate``` application by running the following command. This is our current Production route. We'll use this in the next step.
 
     ```cf routes```
