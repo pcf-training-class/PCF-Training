@@ -27,7 +27,7 @@ By now, you should have logged in to PWS, downloaded and configured CF CLI. If n
    
    ``cf spaces``
    
-   ``cf <space-name>``
+   ``cf space <space-name>``
 
 ### push some simple apps.
 
