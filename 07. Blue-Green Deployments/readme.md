@@ -45,7 +45,7 @@
 
     ```cf unmap-route articulate {{domain_name}} --hostname {{articulate_hostname}}```
     
-    for example: ```cf unmap-route articulate {{domain_name}} --hostname {{articulate_hostname}}```
+    for example: ```cf unmap-route articulate cfapps.io --hostname articulate-acotyledonous-hornlessness```
     
 16. If you **Reset** the load generator, you will see that all the traffic is now going to articulate-v2.
 17. We can now remove the temp route from the articulate-v2 application.
