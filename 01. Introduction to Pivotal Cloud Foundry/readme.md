@@ -55,7 +55,7 @@ By now, you should have logged in to PWS, downloaded and configured CF CLI. If n
 
     ```cd ../python```
     
-    ```cf push python```
+    ```cf push python  --random-route -m 128M```
     
     ```cf apps```
     
