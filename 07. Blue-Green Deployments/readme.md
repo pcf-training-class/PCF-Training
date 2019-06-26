@@ -37,6 +37,7 @@
 13. We can now move more traffic to version 2 by adjusting the number of instances for both versions.
 
     ```cf scale articulate -i 1```
+    
     ```cf scale articulate-v2 -i 2```
 
 14. If you **Reset** the load generator, you will now see 2/3 of the traffic going to articulate-v2.
