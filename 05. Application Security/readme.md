@@ -17,4 +17,5 @@
 4. View the security groups that are in force when applications are staged and when they are running.
 
     ```cf staging-security-groups```
+    
     ```cf running-security-groups```
