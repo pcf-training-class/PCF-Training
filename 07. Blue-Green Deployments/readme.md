@@ -26,7 +26,7 @@
     ```cf start articulate-v2```
     
 9. Now there are 2 versions of the articulate app deployed. Open a new browser tab to view this application.
-10. When the new version of the app is ready to take production load, we can map the production route to it.
+10. When the new version of the app is ready to take on production load, we can map the production route to it.
 
     ```cf map-route articulate-v2 {{domain_name}} --hostname {{articulate_hostname}}```
     
@@ -52,28 +52,28 @@
 
     ```cf unmap-route articulate-v2 {{domain_name}} --hostname {{articulate_hostname}}```
     
-    for example: ```cf unmap-route articulate-v2 {{domain_name}} --hostname {{articulate_hostname}}```
+    for example: ```cf unmap-route articulate-v2 cfapps.io --hostname articulate-acotyledonous-hornlessness-temp```
     
-18. You have now completed the Blue-Green deployment. **Congratulations"
+    You have now completed the Blue-Green deployment. **Congratulations"
 
-### Cleanup
+### Rollback Scenario
 
-1. Now that v2 of articulate is running with the production route, let's delete v1
+1. Let's say we found an issue with v2 of articulate and need to rollback to v1
+2. First we need to re-map the production route to v1
 
-    ```cf delete articulate```
+    ```cf map-route articulate {{domain_name}} --hostname {{articulate_hostname}}```
     
-2. Rename articulate-v2 to articulate
+    for example, ```cf map-route articulate cfapps.io --hostname articulate-acotyledonous-hornlessnes```
+    
+3. Now we need to move all traffic to version 1 by removing the production route from version 2 of the articulate application
 
-    ```cf rename articulate-v2 articulate```
+    ```cf unmap-route articulate-v2 {{domain_name}} --hostname {{articulate_hostname}}```
     
-3. Restart articulate
+    for example: ```cf unmap-route articulate-v2 cfapps.io --hostname articulate-acotyledonous-hornlessness```
     
-    ```cf restart articulate```
-    
-4. Scale down the instances to 1
+4. If you **Reset** the load generator, you will see that all the traffic is now going to articulate v1.
+    Rollback is now complete.
 
-    ```cf scale articulate -i 1```
-    
 
 
 
