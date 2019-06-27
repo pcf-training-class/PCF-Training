@@ -9,7 +9,7 @@
   
 3. Push the ```articulate``` application again, but this time we'll specify a custom buildpack. In this case, we will use the latest version of the Java Buildpack on GitHub
 
-  ```cd <parent-directory>/cf-lab/articulate```
+  ```cd <parent directory>/cf-lab/articulate```
   
   ```cf push articulate -p ./articulate-0.2.jar -b https://github.com/cloudfoundry/java-buildpack.git```
   
