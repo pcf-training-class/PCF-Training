@@ -1,7 +1,7 @@
 # Log Draining
 
 1. Signup for a free [Papertrail account](https://papertrailapp.com/)
-2. Once the account is created, go to the [setup link for Cloud Foundry](papertrailapp.com/systems/new)
+2. Once the account is created, go to the [setup link for Cloud Foundry](https://papertrailapp.com/systems/new)
 3. Select **I use Cloud Foundry**
 4. "What should we call it?" give it a name: **log-drain**
 5. Click **Save**
