@@ -19,7 +19,7 @@
 
 1. Let's run ```articulate``` on a specific verison of Java.
 
-  ```cf set-env articulate JBP_CONFIG_OPEN_JDK_JRE "{jre: { version: 1.8.0_45 }}"```
+  ```cf set-env articulate JBP_CONFIG_OPEN_JDK_JRE "{jre: { version: 1.8.0_192 }}"```
   
 2. Go back to the browser and refresh the ```articulate``` application page. Did the Java version change? Why not?
 3. Restart the ```articulate``` application
@@ -32,3 +32,14 @@
   ```cf restage articulate```
 
 6. Go back to the browser and refresh the ```articulate``` application page. Did the Java version change now? Why?
+
+7. Now, let's change the Java version back to the latest version by unsetting the previously set environment variable
+
+  ```cf unset-env articulate JBP_CONFIG_OPEN_JDK_JRE```
+
+8. Restage the ```articulate``` application
+
+  ```cf restage articulate```
+
+9. Go back to the browser and refresh the ```articulate``` application page and see that the Java version has changed back to ```1.8.0_212```
+
