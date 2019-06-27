@@ -72,6 +72,7 @@
     for example: ```cf unmap-route articulate-v2 cfapps.io --hostname articulate-acotyledonous-hornlessness```
     
 4. If you **Reset** the load generator, you will see that all the traffic is now going to articulate v1.
+
     Rollback is now complete.
 
 
