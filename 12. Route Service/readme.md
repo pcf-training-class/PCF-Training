@@ -4,7 +4,7 @@ We will test the Route Service with a rate limiter app. The idea is to control t
 
 ### Push the rate limiter app
 
-1. Download the zipfile from here and extract it to 
+1. Download the zipfile from [here](https://www.dropbox.com/s/ak00xcnu9smaqvj/route-service.zip?dl=0) and extract it to ```<parent directory>/pcf-lab/```
 2. Change directory to route-service directory
 
     ```cd route-service```
