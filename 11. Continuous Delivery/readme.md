@@ -67,3 +67,21 @@ Fill in the following fields:
 
 Advanced Settings:
   - Application Path = target/articulate-0.0.1-SNAPSHOT.jar
+
+8. Save the config and try running the build by clicking Build Now. Do not proceed past this step until you
+have a successful build and deployment to Pivotal Cloud Foundry. Confirm the application is deployed by
+viewing it in your browser.
+
+Make sure to view the Build details (Left side of screen -> Build History -> Build #).
+Console Output can be viewed there (for active or completed jobs). This is very useful for debugging
+failing builds.
+
+9. In your forked repo, edit the Welcome message for Articulate.
+a. Edit the following file (can be done with a browser):
+
+   https://github.com/{{github_username}}/pcf-articulate-code/blob/master/src/main/resources/templates/index.html
+
+b. Change the welcome message from Welcome to Articulate! to Welcome to My Articulate
+Application! Commit and push the change to GitHub, wait until the polling detects it, and watch the
+magic. Verify the build in Jenkins now succeeds. Also verify your change in the deployed application
+with a browser.
