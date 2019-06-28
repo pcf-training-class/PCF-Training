@@ -77,11 +77,12 @@ Console Output can be viewed there (for active or completed jobs). This is very 
 failing builds.
 
 9. In your forked repo, edit the Welcome message for Articulate.
-a. Edit the following file (can be done with a browser):
+
+   a. Edit the following file (can be done with a browser):
 
    https://github.com/{{github_username}}/pcf-articulate-code/blob/master/src/main/resources/templates/index.html
 
-b. Change the welcome message from Welcome to Articulate! to Welcome to My Articulate
-Application! Commit and push the change to GitHub, wait until the polling detects it, and watch the
-magic. Verify the build in Jenkins now succeeds. Also verify your change in the deployed application
-with a browser.
+   b. Change the welcome message from ```Welcome to Articulate!``` to ```Welcome to My Articulate
+   Application!```. Commit and push the change to GitHub, wait until the polling detects it, and watch the
+   magic. Verify the build in Jenkins now succeeds. Also verify your change in the deployed application
+   with a browser.
